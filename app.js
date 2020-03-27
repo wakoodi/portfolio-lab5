@@ -9,6 +9,7 @@ const usersRouter = require('./routes/users');
 const apiMessageRouter = require('./routes/api/v1/messages')
 
 const mongoose = require('mongoose');
+//with var in heroku
 mongoose.connect( process.env.dbconn , {
   useNewUrlParser: true,
   useUnifiedTopology: true
